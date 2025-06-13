@@ -15889,3 +15889,28 @@ AppData/Local/LINE/Cache/1b893c73af07092df287fde4adc6572fcfa91b7c/e/7/eb48f63b74
 AppData/Local/LINE/Cache/1b893c73af07092df287fde4adc6572fcfa91b7c/e/7/ebae5fbdec29f6deeb7f1fb305e7792c0943b34
 AppData/Local/LINE/Cache/1b893c73af07092df287fde4adc6572fcfa91b7c/e/7/ebdd4f009d599585e82db36542cdff5321dc077.eimg
 AppData/Local/LINE/Cache/1b893c73af07092df287fde4adc6572fcfa91b7c/e/7/ecd4c85ac75b00667bd95db14c663a3d7e7b564
+.vscode/
+AppData/
+Application Data/
+Cookies/
+Documents/My Music/
+Documents/My Pictures/
+Documents/My Videos/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Templates/
+スタート メニュー/
+OneDrive/
+Saved Games/
+Searches/
+Videos/
+*.dat
+*.blf
+*.regtrans-ms
+ntuser.*
+.vscode/
+node_modules/
