@@ -1,1 +1,98 @@
 @charset "UTF-8";
+/*
+Theme Name: blog
+*/
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.readmore {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.readmore a {
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+.readmore a::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+#header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+}
+#header .site-title {
+  padding: 20px 16px;
+  line-height: 1px;
+}
+#header .site-title a {
+  display: inline-block;
+}
+#navi {
+  background-color: #333;
+}
+#navi a {
+  color: #fff;
+}
+#navi ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#navi li {
+  font-size: 0.875rem;
+  padding: 10px 60px 10px 0;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  header
+  -------------------------------------------*/
+  #header .site-title {
+    padding: 20px 16px;
+  }
+  #navi {
+    overflow-x: scroll;
+  }
+}
+    
