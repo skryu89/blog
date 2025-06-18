@@ -55,3 +55,30 @@ function pagination($pages = '', $range = 2) {
     echo '</div>';
   }
 }
+
+if (function_exists('register_sidebar')) {
+  register_sidebar(array(
+    'name' => 'サイドバー',
+    'id' => 'sidebar',
+    'description' => 'サイドバーウィジェット',
+    'before_widget' => '<div>',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="side-title">',
+    'after_title' => '</h3>'
+ ));
+}
+
+add_filter('gutenberg_use_widgets_block_editor', '__return_false');
+
+
+function mytheme_widgets_init() {
+    register_sidebar( array(
+        'name'          => 'サイドバー',
+        'id'            => 'sidebar-1',
+        'before_widget' => '<div class="widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'mytheme_widgets_init' );
