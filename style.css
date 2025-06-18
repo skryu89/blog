@@ -170,3 +170,15 @@ SP
     margin-bottom: 30px;
   }
 }
+
+.pagination ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pagination li {
+  padding: 0 10px;
+}
+.pagination ul a:hover {
+  opacity: 0.7;
+}

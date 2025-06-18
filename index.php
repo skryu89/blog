@@ -30,10 +30,14 @@
           <div class="readmore"><a href="<?php the_permalink(); ?>">READ MORE</a></div>
         </article>
       <?php endwhile; ?>
+      <?php
+        if (function_exists("pagination")) {
+          pagination($wp_query->max_num_pages);
+        }
+      ?>
     <?php endif; ?>
   </main>
 </div>
-
 
 
 <?php get_footer(); ?>
