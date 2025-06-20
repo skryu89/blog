@@ -82,3 +82,5 @@ function mytheme_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'mytheme_widgets_init' );
+
+
